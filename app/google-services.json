@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "704775864359",
+    "firebase_url": "https://tvmania-4cc59.firebaseio.com",
+    "project_id": "tvmania-4cc59",
+    "storage_bucket": "tvmania-4cc59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704775864359:android:2840ae6c8303863d",
+        "android_client_info": {
+          "package_name": "com.example.pritam.tvmania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704775864359-ebh9ih670c3dcgf63vesl2s3jsqga79p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pritam.tvmania",
+            "certificate_hash": "dbde191ca0e4ca51fa8c5b168fdd857468553ff2"
+          }
+        },
+        {
+          "client_id": "704775864359-g14mhnjhvo8vm3v77i913inn27h0h9ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi1B7s6_5bhQwvVDCj_P9-1uEDh3ziyHo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704775864359-g14mhnjhvo8vm3v77i913inn27h0h9ol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

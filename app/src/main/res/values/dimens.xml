@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="elevation_toolbar">8dp</dimen>
+    <dimen name="margin_left">16dp</dimen>
+    <dimen name="margin_right">16dp</dimen>
+    <dimen name="item_offset">5dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="mini_poster_width">150dp</dimen>
+    <dimen name="mini_poster_height">150dp</dimen>
+</resources>

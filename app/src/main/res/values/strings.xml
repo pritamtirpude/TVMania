@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TV Mania</string>
+    <!-- Empty View Text -->
+    <string name="no_connection">No Connection</string>
+    <!-- BottomNavigation Label-->
+    <string name="action_home">Home</string>
+    <string name="action_top_rated">Top Rated</string>
+    <!-- First Air Date Label-->
+    <string name="first_air_date">First Air Date</string>
+    <!-- Rating label -->
+    <string name="rating_label">Rating</string>
+    <!-- Overview Label-->
+    <string name="overview_label">Overview</string>
+    <!-- Review Label -->
+    <string name="review_label">Reviews</string>
+    <!-- Error label for review -->
+    <string name="error_parsing_reviews">Error Fetching Reviews</string>
+    <!-- Author Label-->
+    <string name="author_label">Author</string>
+    <!-- No Reviews Available -->
+    <string name="no_reviews_available">No Reviews Available</string>
+    <!-- Error Loading label -->
+    <string name="error_loading_data">Unable to load data</string>
+    <!-- snackbar for saving label-->
+    <string name="info_saved">Details saved in database</string>
+    <!-- snackbar label for data already exists-->
+    <string name="data_already_exists">Data already exists</string>
+    <string name="transitionName">transitions</string>
+</resources>

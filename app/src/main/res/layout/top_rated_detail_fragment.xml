@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_rated_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/top_rated_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/top_rated_collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/top_rated_backdrop_image_detail"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:contentDescription="@string/app_name"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tv_placeholder"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/top_rated_tv_detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ToolbarBackIconColor"
+                app:layout_collapseMode="pin"></android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/top_rated_poster_image_view"
+                android:layout_width="@dimen/mini_poster_width"
+                android:layout_height="@dimen/mini_poster_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/top_rated_first_air_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/top_rated_poster_image_view"
+                android:layout_marginEnd="71dp"
+                android:layout_marginRight="71dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/first_air_date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_rated_first_air_date_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/top_rated_first_air_date_label"
+                android:layout_alignStart="@+id/top_rated_first_air_date_label"
+                android:layout_below="@+id/top_rated_first_air_date_label"
+                android:layout_marginTop="8dp"
+                tools:text="2018-04-27" />
+
+            <TextView
+                android:id="@+id/top_rated_rating_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/top_rated_first_air_date_text_view"
+                android:layout_alignStart="@+id/top_rated_first_air_date_text_view"
+                android:layout_below="@+id/top_rated_first_air_date_text_view"
+                android:layout_marginTop="9dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/rating_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/top_rated_rating_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/top_rated_rating_label"
+                android:layout_alignStart="@+id/top_rated_rating_label"
+                android:layout_below="@+id/top_rated_rating_label"
+                android:layout_marginTop="8dp"
+                tools:text="8.3" />
+
+            <TextView
+                android:id="@+id/top_rated_overview_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_rated_poster_image_view"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/overview_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:id="@+id/top_rated_overview_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_rated_overview_label"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/top_rated_review_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_rated_overview_text_view"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/review_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/top_rated_review_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_rated_review_label"
+                android:layout_marginTop="8dp"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_rated_review_recycler_view"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/empty_reviews_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/review_recycler_view"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="@string/no_reviews_available"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/empty_reviews_text_view"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/top_rated_detail_fab"
+        app:layout_anchor="@id/top_rated_app_bar_layout"
+        app:layout_anchorGravity="bottom|right|end"
+        style="@style/FabStyle"/>
+</android.support.design.widget.CoordinatorLayout>
