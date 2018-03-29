@@ -58,7 +58,7 @@ public class HomeDetailFragment extends Fragment {
     public static final String REVIEW_RECYCLER_STATE = "review_recycler_state";
 
     public static final String BASE_URL = "https://api.themoviedb.org/3/";
-    public static final String API_KEY = "2122d87c84bf8a2e80168dbc32001aca";
+    public static final String API_KEY = /* YOUR API HERE */;
 
     public static final String TAG = HomeDetailFragment.class.getSimpleName();
 
