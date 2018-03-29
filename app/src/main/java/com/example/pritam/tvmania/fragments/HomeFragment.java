@@ -44,7 +44,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class HomeFragment extends Fragment implements HomeAdapter.ListItemClickListener {
 
     public static final String TAG = HomeFragment.class.getSimpleName();
-    public static final String API_KEY = "2122d87c84bf8a2e80168dbc32001aca";
+    public static final String API_KEY = /* YOUR API HERE */;
     public static final String BASE_URL = "https://api.themoviedb.org/3/";
     public static final String PARCELABLE_LIST = "parcelable_list";
     public static final String RECYCLER_STATE = "recycler_state";
